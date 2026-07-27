@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aryan Vikram Singh | Software Engineer &amp; AI/ML Enthusiast</title>
+<meta name="description" content="Aryan Vikram Singh — Computer Science Engineering student, aspiring Software Engineer, AI/ML enthusiast and Full Stack Web Developer. Explore projects, skills and get in touch for internships and collaborations." />
+<meta name="keywords" content="Aryan Vikram Singh, Software Engineer Portfolio, AI ML Student, Web Developer Portfolio, CSE Student, Internship" />
+<meta name="author" content="Aryan Vikram Singh" />
+<meta name="robots" content="index, follow" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Aryan Vikram Singh | Software Engineer & AI/ML Enthusiast" />
+<meta property="og:description" content="Computer Science Engineering student building modern web apps and exploring AI/ML. Open to Software Engineering, AI/ML, Web Development & Internship opportunities." />
+<meta property="og:image" content="assets/images/og-cover.jpg" />
+<meta property="og:url" content="https://your-username.github.io/portfolio/" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Aryan Vikram Singh | Software Engineer & AI/ML Enthusiast" />
+<meta name="twitter:description" content="Computer Science Engineering student building modern web apps and exploring AI/ML." />
+<meta name="twitter:image" content="assets/images/og-cover.jpg" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/icons/favicon.png" />
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Aryan Vikram Singh",
+  "jobTitle": "Computer Science Engineering Student",
+  "description": "Aspiring Software Engineer, AI/ML Enthusiast and Full Stack Web Developer",
+  "url": "https://your-username.github.io/portfolio/",
+  "sameAs": [
+    "https://linkedin.com/in/your-profile",
+    "https://github.com/your-username",
+    "https://leetcode.com/your-username"
+  ]
+}
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+<!-- Styles -->
+<link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+
+<!-- ===================== LOADING SCREEN ===================== -->
+<div id="loading-screen" aria-hidden="true">
+  <div class="loader-content">
+    <div class="loader-logo">AVS<span class="dot">.</span></div>
+    <div class="loader-bar"><span></span></div>
+  </div>
+</div>
+
+<!-- ===================== CUSTOM CURSOR ===================== -->
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- ===================== SCROLL PROGRESS ===================== -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ===================== NAVIGATION ===================== -->
+<header class="navbar" id="navbar">
+  <nav class="nav-container" aria-label="Primary navigation">
+    <a href="#home" class="logo">Aryan<span>.</span>Dev</a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements</a></li>
+      <li><a href="#certificates" class="nav-link">Certificates</a></li>
+      <li><a href="#resume" class="nav-link">Resume</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle light and dark theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+<!-- ===================== HERO ===================== -->
+<section id="home" class="hero">
+  <div class="animated-bg" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
+
+  <div class="floating-icons" aria-hidden="true">
+    <i class="fa-brands fa-react float-icon i1"></i>
+    <i class="fa-brands fa-python float-icon i2"></i>
+    <i class="fa-brands fa-node-js float-icon i3"></i>
+    <i class="fa-brands fa-git-alt float-icon i4"></i>
+    <i class="fa-brands fa-java float-icon i5"></i>
+    <i class="fa-solid fa-database float-icon i6"></i>
+  </div>
+
+  <div class="container hero-grid">
+    <div class="hero-text reveal">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Aryan Vikram Singh</h1>
+      <h2 class="hero-role">
+        <span id="typedText"></span><span class="cursor-blink">|</span>
+      </h2>
+      <p class="hero-desc">
+        I build modern web applications, explore Artificial Intelligence, and continuously learn new technologies to solve real-world problems.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="ARYAN@Resume.pdf" class="btn btn-primary ripple" download>
+          <i class="fa-solid fa-download"></i> Download Resume
+        </a>
+        <a href="#projects" class="btn btn-outline ripple">
+          <i class="fa-solid fa-diagram-project"></i> View Projects
+        </a>
+        <a href="#contact" class="btn btn-glow ripple">
+          <i class="fa-solid fa-paper-plane"></i> Hire Me
+        </a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/aryan-vikram-singh-2a12663a2/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Aryan-Vikram" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://leetcode.com/your-username" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+        <a href="aryanvikram2008@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://aryan-vikram.github.io/Portfolio/" target="_blank" rel="noopener" aria-label="Portfolio"><i class="fa-solid fa-globe"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="glow-ring"></div>
+      <img src="My_Photo.jpeg" alt="Developer illustration of Aryan Vikram Singh" class="hero-img" loading="lazy" />
+      <div class="floating-card card-1"><i class="fa-solid fa-code"></i> Clean Code</div>
+      <div class="floating-card card-2"><i class="fa-solid fa-brain"></i> AI / ML</div>
+      <div class="floating-card card-3"><i class="fa-solid fa-laptop-code"></i> Full Stack</div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-down" aria-label="Scroll to About section">
+    <i class="fa-solid fa-chevron-down"></i>
+  </a>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about" class="section">
+  <div class="container">
+    <p class="section-eyebrow reveal">Get To Know Me</p>
+    <h2 class="section-title reveal">About Me</h2>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm a passionate Computer Science Engineering student with a strong interest in Software Development, Artificial Intelligence, Machine Learning, and Web Technologies. I enjoy building real-world projects, learning modern technologies, solving programming problems, and continuously improving my technical skills.
+        </p>
+        <p>
+          Outside of academics, I actively participate in hackathons, coding challenges, and open-source learning to sharpen my problem-solving mindset. I'm currently focused on strengthening my Data Structures &amp; Algorithms foundation while diving deeper into full-stack development and applied Machine Learning.
+        </p>
+        <a href="#contact" class="btn btn-primary ripple">Let's Connect <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="about-stats reveal">
+        <div class="stat-card glass">
+          <span class="counter" data-target="12">0</span>+
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat-card glass">
+          <span class="counter" data-target="8">0</span>+
+          <p>Certificates Earned</p>
+        </div>
+        <div class="stat-card glass">
+          <span class="counter" data-target="20">0</span>+
+          <p>Technologies Learned</p>
+        </div>
+        <div class="stat-card glass">
+          <span class="counter" data-target="600">0</span>+
+          <p>Coding Hours</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section id="skills" class="section section-alt">
+  <div class="container">
+    <p class="section-eyebrow reveal">What I Work With</p>
+    <h2 class="section-title reveal">Skills &amp; Technologies</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card glass reveal">
+        <h3><i class="fa-solid fa-code"></i> Programming Languages</h3>
+        <div class="skill-bar"><span class="bar-label">Python <em>90%</em></span><div class="bar-track"><div class="bar-fill" data-width="90"></div></div></div>
+        <div class="skill-bar"><span class="bar-label">Java <em>80%</em></span><div class="bar-track"><div class="bar-fill" data-width="80"></div></div></div>
+        <div class="skill-bar"><span class="bar-label">JavaScript <em>85%</em></span><div class="bar-track"><div class="bar-fill" data-width="85"></div></div></div>
+        <div class="skill-bar"><span class="bar-label">C <em>75%</em></span><div class="bar-track"><div class="bar-fill" data-width="75"></div></div></div>
+        <div class="skill-bar"><span class="bar-label">HTML / CSS <em>92%</em></span><div class="bar-track"><div class="bar-fill" data-width="92"></div></div></div>
+      </div>
+
+      <div class="skill-card glass reveal">
+        <h3><i class="fa-solid fa-layer-group"></i> Frameworks &amp; Libraries</h3>
+        <div class="skill-bar"><span class="bar-label">React <em>80%</em></span><div class="bar-track"><div class="bar-fill" data-width="80"></div></div></div>
+        <div class="skill-bar"><span class="bar-label">Node.js <em>75%</em></span><div class="bar-track"><div class="bar-fill" data-width="75"></div></div></div>
+        <div class="skill-bar"><span class="bar-label">Express <em>72%</em></span><div class="bar-track"><div class="bar-fill" data-width="72"></div></div></div>
+        <div class="skill-bar"><span class="bar-label">Bootstrap <em>85%</em></span><div class="bar-track"><div class="bar-fill" data-width="85"></div></div></div>
+        <div class="skill-bar"><span class="bar-label">Tailwind CSS <em>80%</em></span><div class="bar-track"><div class="bar-fill" data-width="80"></div></div></div>
+      </div>
+
+      <div class="skill-card glass reveal">
+        <h3><i class="fa-solid fa-database"></i> Databases</h3>
+        <div class="skill-bar"><span class="bar-label">MySQL <em>78%</em></span><div class="bar-track"><div class="bar-fill" data-width="78"></div></div></div>
+        <div class="skill-bar"><span class="bar-label">MongoDB <em>75%</em></span><div class="bar-track"><div class="bar-fill" data-width="75"></div></div></div>
+      </div>
+
+      <div class="skill-card glass reveal">
+        <h3><i class="fa-solid fa-toolbox"></i> Developer Tools</h3>
+        <div class="tool-badges">
+          <span><i class="fa-brands fa-git-alt"></i> Git</span>
+          <span><i class="fa-brands fa-github"></i> GitHub</span>
+          <span><i class="fa-solid fa-code"></i> VS Code</span>
+          <span><i class="fa-brands fa-figma"></i> Figma</span>
+          <span><i class="fa-solid fa-satellite-dish"></i> Postman</span>
+          <span><i class="fa-solid fa-palette"></i> Canva</span>
+        </div>
+      </div>
+
+      <div class="skill-card glass reveal">
+        <h3><i class="fa-solid fa-brain"></i> AI / ML</h3>
+        <div class="skill-bar"><span class="bar-label">NumPy <em>80%</em></span><div class="bar-track"><div class="bar-fill" data-width="80"></div></div></div>
+        <div class="skill-bar"><span class="bar-label">Pandas <em>78%</em></span><div class="bar-track"><div class="bar-fill" data-width="78"></div></div></div>
+        <div class="skill-bar"><span class="bar-label">Scikit-learn <em>65%</em></span><div class="bar-track"><div class="bar-fill" data-width="65"></div></div></div>
+        <div class="skill-bar"><span class="bar-label">TensorFlow (Learning) <em>40%</em></span><div class="bar-track"><div class="bar-fill" data-width="40"></div></div></div>
+      </div>
+
+      <div class="skill-card glass reveal">
+        <h3><i class="fa-solid fa-people-group"></i> Soft Skills</h3>
+        <div class="tool-badges">
+          <span><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</span>
+          <span><i class="fa-solid fa-comments"></i> Communication</span>
+          <span><i class="fa-solid fa-flag"></i> Leadership</span>
+          <span><i class="fa-solid fa-people-arrows"></i> Teamwork</span>
+          <span><i class="fa-solid fa-clock"></i> Time Management</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJECTS ===================== -->
+<section id="projects" class="section">
+  <div class="container">
+    <p class="section-eyebrow reveal">My Work</p>
+    <h2 class="section-title reveal">Featured Projects</h2>
+
+    <div class="projects-grid">
+
+      <article class="project-card glass reveal">
+        <div class="project-img">
+          <img src="https://i.ytimg.com/vi/_7sSpsHV_wg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAeJM7U4_VNihFA-ZQHgH2w07VrDw" alt="AI Plant Disease Detection System interface" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <h3>MERN JOB PORTAL- JOBNEST</h3>
+          <p>Developed a MERN-based job portal supporting secure JWT authentication, recruiter
+dashboard, resume uploads, and REST APIs for 500+ simulated users.</p>
+          <div class="tech-tags">
+            <span>MongoDB</span><span>Express.js</span><span>React.js</span><span>Node.js</span>
+          </div>
+          <div class="project-links">
+            <a href="https://jobnest-portal.onrender.com" target="_blank" rel="noopener" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> SEE PROJECT</a>
+            <a href="#" target="_blank" rel="noopener" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass reveal">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?auto=format&fit=crop&w=800&q=60" alt="Modern portfolio website preview" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <h3>Modern Portfolio Website</h3>
+          <p>A fully responsive personal portfolio built with vanilla HTML, CSS and JavaScript featuring glassmorphism UI, scroll animations, dark/light mode and a validated contact form.</p>
+          <div class="tech-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/your-username/portfolio" target="_blank" rel="noopener" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://your-username.github.io/portfolio/" target="_blank" rel="noopener" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass reveal">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1601134467661-3d775b999c8b?auto=format&fit=crop&w=800&q=60" alt="Weather app dashboard preview" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <h3>Weather App</h3>
+          <p>A real-time weather forecasting app that fetches live data from a public weather API, showing temperature, humidity and conditions for any city with a clean, responsive UI.</p>
+          <div class="tech-tags">
+            <span>JavaScript</span><span>REST API</span><span>CSS3</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/your-username/weather-app" target="_blank" rel="noopener" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#" target="_blank" rel="noopener" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass reveal">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1540350394557-8d14678e7f91?auto=format&fit=crop&w=800&q=60" alt="Task management system board preview" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <h3>Task Management System</h3>
+          <p>A full-stack task tracker with user authentication, drag-and-drop task boards, priority tagging and deadline reminders, built to manage personal and team workflows.</p>
+          <div class="tech-tags">
+            <span>React</span><span>Node.js</span><span>MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/your-username/task-manager" target="_blank" rel="noopener" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#" target="_blank" rel="noopener" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass reveal">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=60" alt="Student management system dashboard preview" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <h3>Student Management System</h3>
+          <p>A CRUD-based application for managing student records, attendance and grades with role-based access for admins and teachers, backed by a relational database.</p>
+          <div class="tech-tags">
+            <span>Java</span><span>MySQL</span><span>JDBC</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/your-username/student-management" target="_blank" rel="noopener" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#" target="_blank" rel="noopener" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EDUCATION ===================== -->
+<section id="education" class="section section-alt">
+  <div class="container">
+    <p class="section-eyebrow reveal">Academic Journey</p>
+    <h2 class="section-title reveal">Education</h2>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass">
+          <span class="timeline-date">2025 — Present</span>
+          <h3>Bachelor of Technology — Computer Science Engineering</h3>
+          <p class="timeline-place">Chaudhary Charan Singh University · Currently in Second Year</p>
+          <ul>
+            <li>Consistently maintaining a strong academic record across core CS subjects</li>
+            <li>Active member of the coding &amp; technical club, contributing to peer learning sessions</li>
+            <li>Building a solid foundation in Data Structures, Algorithms, OOP and DBMS</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass">
+          <span class="timeline-date">2024 — 2025</span>
+          <h3>Higher Secondary Education (Science - PCM)</h3>
+          <p class="timeline-place">Senior Secondary School</p>
+          <ul>
+            <li>Built strong fundamentals in Mathematics and Computer Science</li>
+            <li>First introduced to programming through school-level computer courses</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ACHIEVEMENTS ===================== -->
+<section id="achievements" class="section">
+  <div class="container">
+    <p class="section-eyebrow reveal">Milestones</p>
+    <h2 class="section-title reveal">Achievements</h2>
+
+    <div class="achievements-grid">
+      <div class="achieve-card glass reveal"><i class="fa-solid fa-trophy"></i><h3>Hackathons</h3><p>Participated in college and inter-college hackathons, collaborating in teams to build working prototypes under time constraints.</p></div>
+      <div class="achieve-card glass reveal"><i class="fa-solid fa-medal"></i><h3>Coding Challenges</h3><p>Regularly solve Data Structures &amp; Algorithms problems on competitive coding platforms to sharpen problem-solving speed.</p></div>
+      <div class="achieve-card glass reveal"><i class="fa-solid fa-chalkboard-user"></i><h3>Technical Workshops</h3><p>Attended workshops on Web Development, AI/ML and cloud fundamentals conducted by industry professionals.</p></div>
+      <div class="achieve-card glass reveal"><i class="fa-solid fa-lightbulb"></i><h3>Personal Projects</h3><p>Independently designed and built multiple full-stack and AI-based projects to apply classroom concepts practically.</p></div>
+      <div class="achieve-card glass reveal"><i class="fa-brands fa-osi"></i><h3>Open Source Learning</h3><p>Exploring open-source repositories to understand real-world codebases and best practices in collaborative development.</p></div>
+      <div class="achieve-card glass reveal"><i class="fa-solid fa-graduation-cap"></i><h3>Continuous Learning</h3><p>Committed to consistently upskilling through self-paced learning, documentation and hands-on practice.</p></div>
+      <div class="achieve-card glass reveal"><i class="fa-solid fa-laptop"></i><h3>Online Courses</h3><p>Completed structured courses in Web Development, DSA and Machine Learning from recognized learning platforms.</p></div>
+      <div class="achieve-card glass reveal"><i class="fa-solid fa-flag-checkered"></i><h3>Future Goals</h3><p>Aiming to secure a Software Engineering or AI/ML internship and contribute to impactful, production-grade software.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CERTIFICATES ===================== -->
+<section id="certificates" class="section section-alt">
+  <div class="container">
+    <p class="section-eyebrow reveal">Verified Learning</p>
+    <h2 class="section-title reveal">Certificates</h2>
+
+    <div class="cert-grid">
+      <div class="cert-card glass reveal"><i class="fa-brands fa-google"></i><h3>Google</h3><p>Introduction to Generative AI Studio</p><a href="GOOGLE Certificate.jpeg" target="_blank"><button class="btn btn-outline btn-sm view-cert">View Certificate</button></a></div>
+      <div class="cert-card glass reveal"><i class="fa-brands fa-microsoft"></i><h3>TATA Consultancy Services</h3><p>TCS iON Career Edge - Young Professional Course</p><a href="TCS CERTIFICATE-1.pdf" target="_blank"><button class="btn btn-outline btn-sm view-cert">View Certificate</button></a></div>
+      <div class="cert-card glass reveal"><i class="fa-solid fa-book-open"></i><h3>Coursera</h3><p>Web Development Specialization</p><button class="btn btn-outline btn-sm view-cert">View Certificate</button></div>
+      <div class="cert-card glass reveal"><i class="fa-solid fa-network-wired"></i><h3>Cisco</h3><p>Introduction to Cybersecurity</p><button class="btn btn-outline btn-sm view-cert">View Certificate</button></div>
+      <div class="cert-card glass reveal"><i class="fa-solid fa-building-columns"></i><h3>NPTEL</h3><p>Data Structures &amp; Algorithms</p><button class="btn btn-outline btn-sm view-cert">View Certificate</button></div>
+      <div class="cert-card glass reveal"><i class="fa-solid fa-certificate"></i><h3>Udemy</h3><p>Full Stack Web Development Bootcamp</p><button class="btn btn-outline btn-sm view-cert">View Certificate</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RESUME ===================== -->
+<section id="resume" class="section">
+  <div class="container">
+    <p class="section-eyebrow reveal">My Resume</p>
+    <h2 class="section-title reveal">Resume</h2>
+
+    <div class="resume-card glass reveal">
+      <i class="fa-solid fa-file-lines resume-icon"></i>
+      <div>
+        <h3>Aryan Vikram Singh — Resume</h3>
+        <p>Get a complete overview of my education, skills, projects and achievements in a single, recruiter-friendly document.</p>
+        <div class="hero-buttons">
+          <a href="ARYAN@Resume.pdf" class="btn btn-primary ripple" download><i class="fa-solid fa-download"></i> Download Resume</a>
+          <a href="ARYAN@Resume.pdf" target="_blank" rel="noopener" class="btn btn-outline ripple"><i class="fa-solid fa-eye"></i> Preview Resume</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT & FEEDBACK ===================== -->
+<section id="contact" class="section section-alt">
+  <div class="container">
+    <p class="section-eyebrow reveal">Get In Touch</p>
+    <h2 class="section-title reveal">Contact &amp; Feedback</h2>
+
+    <div class="contact-grid">
+      <!-- Profile card -->
+      <div class="profile-card glass reveal">
+        <img src="My_Photo.jpeg" alt="Aryan Vikram Singh profile photo" class="profile-photo" loading="lazy" />
+        <h3>Aryan Vikram Singh</h3>
+        <p class="profile-role">Computer Science Engineering Student<br />Aspiring Software Engineer · AI &amp; ML Enthusiast</p>
+
+        <div class="profile-details">
+          <p><i class="fa-solid fa-envelope"></i> aryanvikram2008@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +91 8303529190</p>
+          <p><i class="fa-solid fa-location-dot"></i> Meerut, Uttar Pradesh, India</p>
+          <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/aryan-vikram-singh-2a12663a2/" target="_blank" rel="noopener">linkedin.com/in/your-profile</a></p>
+          <p><i class="fa-brands fa-github"></i> <a href="https://github.com/Aryan-Vikram" target="_blank" rel="noopener">github.com/your-username</a></p>
+          <p><i class="fa-solid fa-globe"></i> <a href="https://aryan-vikram.github.io/Portfolio/" target="_blank" rel="noopener">your-username.github.io/portfolio</a></p>
+          <p><i class="fa-solid fa-code"></i> <a href="https://leetcode.com/your-username" target="_blank" rel="noopener">leetcode.com/your-username</a></p>
+        </div>
+
+        <div class="availability-badge">
+          <span class="pulse-dot"></span> Available for Work
+        </div>
+        <div class="availability-list">
+          <span><i class="fa-solid fa-check"></i> Internships</span>
+          <span><i class="fa-solid fa-check"></i> Freelance Projects</span>
+          <span><i class="fa-solid fa-check"></i> Open Source Collaboration</span>
+          <span><i class="fa-solid fa-check"></i> Part-Time Jobs</span>
+          <span><i class="fa-solid fa-check"></i> Hackathons</span>
+        </div>
+
+        <p class="response-note"><i class="fa-solid fa-clock"></i> Usually responds within 24 hours</p>
+        <p class="local-time"><i class="fa-solid fa-clock-rotate-left"></i> Local time: <span id="localTime">--:--</span></p>
+        <button class="btn btn-outline btn-sm" id="vcardBtn"><i class="fa-solid fa-address-card"></i> Download vCard</button>
+      </div>
+
+      <!-- Contact form -->
+      <div class="form-card glass reveal">
+        <h3>Send a Message</h3>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" name="fullName" required />
+              <span class="error-msg"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required />
+              <span class="error-msg"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" />
+              <span class="error-msg"></span>
+            </div>
+            <div class="form-group">
+              <label for="company">Company / Organization</label>
+              <input type="text" id="company" name="company" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <input type="text" id="subject" name="subject" required />
+              <span class="error-msg"></span>
+            </div>
+            <div class="form-group">
+              <label for="purpose">Purpose *</label>
+              <select id="purpose" name="purpose" required>
+                <option value="">Select purpose</option>
+                <option>Internship Opportunity</option>
+                <option>Job Opportunity</option>
+                <option>Freelance Project</option>
+                <option>Project Collaboration</option>
+                <option>Feedback</option>
+                <option>General Inquiry</option>
+                <option>Other</option>
+              </select>
+              <span class="error-msg"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message * <span class="char-counter"><span id="msgCount">0</span>/500</span></label>
+            <textarea id="message" name="message" rows="4" maxlength="500" required></textarea>
+            <span class="error-msg"></span>
+          </div>
+
+          <div class="form-group">
+            <label>Rate your overall impression</label>
+            <div class="star-rating" id="starRating">
+              <i class="fa-regular fa-star" data-value="1"></i>
+              <i class="fa-regular fa-star" data-value="2"></i>
+              <i class="fa-regular fa-star" data-value="3"></i>
+              <i class="fa-regular fa-star" data-value="4"></i>
+              <i class="fa-regular fa-star" data-value="5"></i>
+            </div>
+          </div>
+
+          <div class="form-group checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="agree" name="agree" required />
+              I agree that my information will be used to respond to my inquiry *
+            </label>
+            <span class="error-msg"></span>
+          </div>
+
+          <div class="form-buttons">
+            <button type="submit" class="btn btn-primary ripple" id="submitBtn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-loader" hidden></span>
+            </button>
+            <button type="reset" class="btn btn-outline ripple">Clear Form</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Visitor Feedback -->
+    <div class="feedback-section reveal">
+      <h3 class="feedback-title"><i class="fa-solid fa-comment-dots"></i> Visitor Feedback</h3>
+      <div class="feedback-grid">
+        <form id="feedbackForm" class="feedback-form glass" novalidate>
+          <div class="form-group">
+            <label for="fbName">Name *</label>
+            <input type="text" id="fbName" name="fbName" required />
+            <span class="error-msg"></span>
+          </div>
+          <div class="form-group">
+            <label for="fbText">Feedback *</label>
+            <textarea id="fbText" name="fbText" rows="3" required></textarea>
+            <span class="error-msg"></span>
+          </div>
+          <div class="form-group">
+            <label>Experience Rating</label>
+            <div class="star-rating" id="fbStarRating">
+              <i class="fa-regular fa-star" data-value="1"></i>
+              <i class="fa-regular fa-star" data-value="2"></i>
+              <i class="fa-regular fa-star" data-value="3"></i>
+              <i class="fa-regular fa-star" data-value="4"></i>
+              <i class="fa-regular fa-star" data-value="5"></i>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fbSuggestion">Suggestions</label>
+            <textarea id="fbSuggestion" name="fbSuggestion" rows="2"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary ripple">Submit Feedback</button>
+        </form>
+
+        <div class="feedback-list glass" id="feedbackList">
+          <h4>What Visitors Say</h4>
+          <div class="feedback-empty" id="feedbackEmpty">No feedback yet. Be the first to share your thoughts!</div>
+          <ul id="feedbackItems"></ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div class="map-wrapper reveal">
+      <iframe
+        title="Location Map"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Meerut,Uttar%20Pradesh,India&output=embed">
+      </iframe>
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq-section reveal">
+      <h3 class="faq-title">Frequently Asked Questions</h3>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item glass">
+          <button class="accordion-header">What kind of opportunities are you looking for? <i class="fa-solid fa-chevron-down"></i></button>
+          <div class="accordion-body"><p>I'm actively looking for Software Engineering, AI/ML, and Web Development internships, along with freelance and open-source collaboration opportunities.</p></div>
+        </div>
+        <div class="accordion-item glass">
+          <button class="accordion-header">Are you available for freelance projects? <i class="fa-solid fa-chevron-down"></i></button>
+          <div class="accordion-body"><p>Yes! I take on select freelance web development projects alongside my studies. Reach out via the contact form with your project details.</p></div>
+        </div>
+        <div class="accordion-item glass">
+          <button class="accordion-header">How quickly do you respond to messages? <i class="fa-solid fa-chevron-down"></i></button>
+          <div class="accordion-body"><p>I usually respond within 24 hours. For urgent matters, email is the fastest way to reach me.</p></div>
+        </div>
+        <div class="accordion-item glass">
+          <button class="accordion-header">Can I see the source code for your projects? <i class="fa-solid fa-chevron-down"></i></button>
+          <div class="accordion-body"><p>Absolutely — every project card links directly to its GitHub repository so you can explore the code.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#home" class="logo">Aryan<span>.</span>Dev</a>
+      <p>Building thoughtful software and exploring AI, one project at a time.</p>
+    </div>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/aryan-vikram-singh-2a12663a2/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/Aryan-Vikram" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://leetcode.com/aryan-vikram" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+      <a href="mailto:aryanvikram2008@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+  <p class="copyright">&copy; <span id="year"></span> Aryan Vikram Singh. All rights reserved.</p>
+</footer>
+
+<!-- Back to top -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- Floating chat widget -->
+<div class="chat-widget">
+  <button id="chatToggle" class="chat-toggle-btn" aria-label="Open chat widget"><i class="fa-solid fa-message"></i></button>
+  <div class="chat-box glass" id="chatBox" hidden>
+    <div class="chat-header">
+      <span>Quick Chat</span>
+      <button id="chatClose" aria-label="Close chat">&times;</button>
+    </div>
+    <div class="chat-body">
+      <p>Hi there 👋 Thanks for visiting! Want to book a quick call or send a message?</p>
+      <a href="#contact" class="btn btn-primary btn-sm">Book a Meeting</a>
+      <a href="mailto:aryan.vikram.singh@example.com" class="btn btn-outline btn-sm">Email Me</a>
+    </div>
+  </div>
+</div>
+
+<!-- Success popup -->
+<div class="success-popup" id="successPopup" hidden>
+  <div class="success-content glass">
+    <div class="checkmark-circle">
+      <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24" fill="none"/><path fill="none" d="M14 27l7 7 16-16"/></svg>
+    </div>
+    <h3 id="successTitle">Message Sent!</h3>
+    <p id="successMsg">Thank you for reaching out. I'll get back to you within 24 hours.</p>
+    <button class="btn btn-primary" id="closePopup">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
